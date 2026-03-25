@@ -1,0 +1,31 @@
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #hamburger, #ch-menu {
+    display: none;
+  }
+  nav ul.meniu li:first-child .text {
+    display: none;
+  }
+  nav ul.meniu li ul {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.95);
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+  nav ul.meniu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+  }
+  nav ul.meniu li ul li a span {
+    font-size: 0.85rem;
+    height: var(--inaltime-meniu);
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+  }
+}

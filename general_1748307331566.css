@@ -1,0 +1,51 @@
+body {
+  background-color: #fff8f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#err-coloane {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  #err-coloane {
+    flex-direction: column;
+    text-align: center;
+  }
+  #err-coloane section {
+    padding: 0 1rem;
+  }
+}
+
+#err-imag {
+  max-width: 100px;
+}
+#err-imag img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  border: 3px solid #e74c3c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  max-width: 600px;
+}
+section h2 {
+  font-size: 2rem;
+  color: #c0392b;
+  margin-bottom: 1rem;
+}
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
