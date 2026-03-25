@@ -1,0 +1,42 @@
+<div id="grid-galerie">
+    <%
+        let d = new Date();
+        let ora_curenta = d.getHours();
+
+        function oraInInterval(ora, intervale_ore) {
+            const [start, end] = intervale_ore;
+            if (start < end) {
+                return ora >= start && ora < end;
+            } else {
+                // interval peste miezul nopții, ex: [20, 5]
+                return ora >= start || ora < end;
+            }
+        }
+        let imaginiAfisate=[];
+        for (let imag of locals.imagini) {
+            if (imag.intervale_ore && oraInInterval(ora_curenta, imag.intervale_ore)) {
+                imaginiAfisate.push(imag);
+            }
+        }
+        imaginiAfisate=imaginiAfisate.slice(0,14);
+        for(let i=0;i<imaginiAfisate.length;i++){
+            let imag=imaginiAfisate[i];
+    %>
+        <figure class="img<%= i + 1%>">
+            <title><%- imag.descriere_imag %></title>
+            <img src="<%- imag.cale_relativa %>"
+                srcset="<%- imag.cale_relativa_mic %> 150w,
+                        <%- imag.cale_relativa_mediu %> 300w,
+                        <%- imag.cale_relativa %> 500w"
+                sizes="(max-width: 700px) 150px,
+                       (max-width: 1000px) 300px,
+                        500px"
+                alt="<%- imag.alternativ %>">
+            <figcaption><%- imag.descriere_imag %></figcaption>
+        </figure>
+    <%
+            
+        }
+    %>
+        
+</div>

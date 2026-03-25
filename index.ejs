@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despre site</title>
+  <link rel="stylesheet" href="/resurse/css/despre.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Despre acest site</h1>
+    <nav>
+      <a href="/">Acasă</a>
+      <a href="/despre" class="active">Despre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="bg-fix" id="bg-despre">
+      <section class="overlay">
+        <h2>Scopul site-ului</h2>
+        <p>Promovarea rețetelor tradiționale românești într-un mod modern și accesibil pentru toți.</p>
+      </section>
+      <section class="overlay">
+        <h2>Echipa</h2>
+        <p>Site realizat de <strong>Andreea Busuioc</strong> împreună cu colaboratori pasionați de gastronomia autentică românească.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rețete Tradiționale Românești. Toate drepturile rezervate.</p>
+  </footer>
+<script>
+  const bg = document.getElementById("bg-despre");
+  const imagini = [
+    "/resurse/imagini/fundal/p1.jpg",
+    "/resurse/imagini/fundal/p2.jpg",
+    "/resurse/imagini/fundal/p3.jpg"
+  ];
+  let index = 0;
+  const t = 5; // secunde
+
+  bg.style.backgroundImage = `url('${imagini[index]}')`;
+
+  setTimeout(() => {
+    setInterval(() => {
+      index = (index + 1) % imagini.length;
+      bg.style.backgroundImage = `url('${imagini[index]}')`;
+    }, t * 1000);
+  }, t * 1000);
+</script>
+

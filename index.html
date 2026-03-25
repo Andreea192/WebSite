@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+       <title>Rețete tradiționale românești</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
+       <meta name="keywords" content="mâncare, culinar, tradițional, românească, bucătărie, gătit, rețete, simple, România, autentic.">
+       <meta name="description" content="Retete traditionale romanesti.Delicii romanesti.">
+       <meta name="author" content="Andreea Busuioc"> 
+       <link rel="icon" type="image/png" href="./resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" >
+       <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" >
+       <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" >
+       <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" >
+       <meta name="apple-mobile-app-title" content="MyWebsite">
+       <link rel="icon" type="image/png" href="https://www.exemplu.ro/resurse/imagini/favicon/favicon-96x96.png" sizes="96x96">
+       <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" >
+       <meta name="msapplication-TileColor" content="#0078D7">
+       <link href="/resurse/css/general.css" rel="stylesheet" type="text/css" />
+       <link href="/resurse/css/nav.css" rel="stylesheet" type="text/css" />
+       <link href="/resurse/css/nav800.css" rel="stylesheet" type="text/css" />
+       <link href="/resurse/css/nav600.css" rel="stylesheet" type="text/css" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rețete tradiționale românești</h1>
+        </header>
+        <nav>
+            <input id = "ch-menu" type = "checkbox"/>
+            <label id = "hamburger" for ="ch-menu">
+                <img src = "resurse/imagini/Hamburger_icon_alb.png" alt = "menu"/>
+            </label>
+            <ul class="meniu">
+              <li>
+                <a href="#acasa" class="text-icon">
+                  <i class="fa-solid fa-house"></i> <span class="text">Acasă</span>
+                </a>
+                <ul>
+                  <li><a href="#Introducere"><span>Bine ați venit</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#Mic" class="text-icon">Mic dejun</a>
+                <ul>
+                  <li><a href="Mamaliga.html"  data-short="Mamaliga"><span>Mămăligă cu brânză și smântână</span></a></li>
+                  <li><a href="Omleta.html"  data-short="Omleta"><span>Omletă țărănească</span></a></a></li>
+                  <li><a href="Branza.html" data-short="Placinta"><span>Plăcintă cu brânză</span></a></li>
+                  <li><a href="Clatite.html" data-short="Clatite"><span>Clătite cu brânză și smântână</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#Prz" class="text-icon">Prânz</a>
+                <ul>
+                  <li><a href="Ciorba.html" data-short="Ciorba"><span>Ciorbă de burtă</span></a></li>
+                  <li><a href="Sarmale.html" data-short="Sarmale"><span>Sarmale în foi de varză</span></a></li>
+                  <li><a href="Tochitura.html" data-short="Tochitura"><span>Tochitură moldovenească</span></a></li>
+                  <li><a href="Iahnie.html" data-short="Iahnie de fasole"><span>Iahnie de fasole cu ciolan afumat</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#cna" class="text-icon">Cină</a>
+                <ul>
+                  <li><a href="Vinete.html" data-short="Salata de vinete"><span>Salată de vinete</span></a></li>
+                  <li><a href="Ciuperci.html" data-short="Ciuperci"><span>Ciuperci cu smântână</span></a></li>
+                  <li><a href="Pogăcele.html" data-short="Pogacele"><span>Pogăcele cu jumări</span></a></li>
+                  <li><a href="Cartofi.html" data-short="Cartofi taranesti"><span>Cartofi țărănești cu mujdei</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#Dsrt" class="text-icon">Desert</a>
+                <ul>
+                  <li><a href="Cozonac.html" data-short="Cozonac cu nuca"><span>Cozonac cu nucă și cacao</span></a></li>
+                  <li><a href="Plăcintă.html" data-short="Placinta de mere">Plăcintă cu mere</a></li>
+                  <li><a href="Papanași.html" data-short="Papanași"><span>Papanași cu smântână și dulceață</span></a></li>
+                  <li><a href="Gogoși.html" data-short="Gogoși"><span>Gogoși moldovenești</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#Sft" class="text-icon">Informații suplimentare</a>
+                <ul>
+                  <li><a href="#Curs"><span>Curs</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>                
+        <main>
+            <div id="grid-pagina">
+                <section id="Introducere">
+                    <h2>Bine ați venit!<i class="fa-solid fa-face-smile"></i></h2>
+                    <p>Site-ul nostru este dedicat <b>rețetelor tradiționale românești</b>! Aici veți găsi o selecție de <b>rețete autentice</b>, care reflectă bogăția culinară a fiecărei mese din zi: mic dejun, prânz, cină și desert. De asemenea, dacă sunteți pasionați de <b>gătit</b> vă așteptăm și la cursul nostru <b>GĂTEȘTE ROMÂNEȘTE</b>, predat de nimeni altul decât Popescu Florin, cel mai bun bucătar din țară la ora actuală.Alaturi de acesta avem multi alti bucatari desavarsiti precum Stanca Andra, Militaru Andrei, etc</p>
+                    <a href="#Curs">Pentru mai multe detalii despre curs</a>
+                    <section id="Rezumat">
+                        <h2>Despre noi</h2>
+                        <p>Indiferent dacă îți dorești o <b>mâncare</b> sănătoasă pentru un început de zi energizant, un prânz copios ce îți satisface pofta de mâncare, o cină savuroasă alături de cei dragi sau un desert care să îți încânte papilele gustative, aici vei găsi <b>rețete culinare tradiționale românești</b> ce te vor duce înapoi la gusturile autentice ale copilăriei.
+                            Explorează fiecare secțiune și descoperă preparate din <b>bucătăria românească</b>, fie că îți dorești arome familiare sau ești curios să încerci ceva nou. Fiecare rețetă este detaliată pas cu pas, folosind ingrediente simple, ușor de găsit, pentru ca gătitul să devină o adevărată plăcere în orice casă din <b>România</b>.</section>
+                </section>
+                <section id="Program">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Profesor</th>
+                                    <th>Zi</th>
+                                    <th>Interval dimineata</th>
+                                    <th>Pauza de masa</th>
+                                    <th>Interval seara</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Stanca Andra</td>
+                                    <td>Luni</td>
+                                    <td>10-12</td>
+                                    <td>12-14</td>
+                                    <td>14-18</td>
+                                </tr>
+                                <tr>
+                                    <td>Popescu Florin</td>
+                                    <td>Marti</td>
+                                    <td>14-20</td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <td>Militaru Andrei</td>
+                                    <td>Miercuri</td>
+                                    <td>8-12</td>
+                                    <td>12-14</td>
+                                    <td>14-16</td>
+                                </tr>
+                                <tr>
+                                    <td>Stanca Andra</td>
+                                    <td>Joi</td>
+                                    <td>10-14</td>
+                                    <td>14-16</td>
+                                    <td>16-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Popescu Florin</td>
+                                    <td>Vineri</td>
+                                    <td>10-12</td>
+                                    <td>12-13</td>
+                                    <td>13-17</td>
+                                </tr>
+                                <tr>
+                                    <td>Militaru Andrei</td>
+                                    <td>Sambata</td>
+                                    <td>8-12</td>
+                                    <td>12-13</td>
+                                    <td>13-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Popescu Florin si Stanca Andra</td>
+                                    <td>Duminica</td>
+                                    <td>10-12</td>
+                                    <td>12-13</td>
+                                    <td>13-17</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5">Va asteptam in numar cat mai mare!</td>
+                                </tr>
+                            </tfoot>
+                            <caption>Pentru detalii accesati numarul de telefon din josul paginii!</caption>
+                        </table>
+                    </div>
+                </section>
+                <section id="Mic_dejun">
+                        <h3><a id="Mic_dejun">Mic dejun</a></h3>
+                        <figure>
+                            <img width="100%" min-width = "80" max-width = "400"src="./resurse/imagini/salata.jpg" alt="salata">
+                            
+                            <map name="mapa">
+                                <area shape="rect" coords="100,100,400,400" href="#Sfaturi" alt="Parere" title="Despre noi">
+                            </map>                
+                        <figcaption><strong>ATENTIE: micul dejun este cea mai importanta masa a zilei!</strong></figcaption>
+                        </figure>
+                        
+                        <p>Începe ziua cu un mic dejun tradițional, plin de energie și savoare. Descoperă rețete simple și gustoase pentru fiecare dimineață, care te vor bucura cu arome familiare și ingrediente autentice. Fie că ești fan <b>mămăligă</b> cu <b>brânză</b> și <b>smântână</b>, <b>omletă țărănească</b> sau <b>clătite</b> cu <b>brânză</b>, aici vei găsi tot ce îți trebuie pentru un început de zi perfect. Fiecare rețetă este detaliată pas cu pas, pentru ca gătitul să fie ușor și rapid, iar tu să te bucuri de gusturile tradiționale ale unui <b>mic dejun tradițional</b>.</p>
+                        <p>Încearcă și o <b>plăcintă</b> delicioasă sau un platou cu <b>mezeluri</b>, <b>cârnați</b> și <b>telemea</b>. Dacă preferi ceva mai ușor, poți opta pentru <b>urdă</b> proaspătă și un pahar de <b>lapte</b>. Toate aceste preparate sunt perfecte pentru un <b>gătit rapid</b>, oferindu-ți <b>rețete de dimineață</b> savuroase și hrănitoare.</p><br><q>Micul dejun este prima masă importantă a zilei. Este cheia unei sănătăți bune și a unei zile productive.</q>
+                </section>
+                <section id="Pranz">
+                        <h3><a id="Pranz">Prânz</a></h3>
+                        <figure>
+                            <picture>
+                                <source media="(min-width: 1000px)" srcset="./resurse/imagini/pranz.jpg">
+                                <source media="(min-width: 400px)" srcset="./resurse/imagini/pranz1.jpg">
+                                <img src="./resurse/imagini/pranz2.jpg" alt="Pranz" usemap="#mapa" style="width: 100%; max-width: 600px;">
+                            </picture>
+                            <map name="mapa">
+                                <area shape="rect" coords="100,100,400,400" href="#Sfaturi" alt="Parere" title="Retete">
+                            </map>                
+                        <figcaption>Pranz sanatos</figcaption>
+                        </figure>
+                        <p>Prânzul este momentul perfect pentru a te bucura de mâncăruri tradiționale și consistente. Explorează rețete pentru toate gusturile, de la <b>ciorbă</b> de <b>burtă</b> sau <b>sarmale</b> cu <b>varză</b>, la <b>tochitură</b> <b>moldovenească</b> sau <b>iahnie</b> de <b>fasole</b> cu <b>ciolan afumat</b>. Fiecare <b>preparat românesc</b> îți aduce în farfurie gusturi autentice, iar <b>mămăliga</b> se potrivește perfect cu orice fel de <b>carne</b>. Așadar, pregătește-te pentru un <b>prânz tradițional</b>, plin de savoare și tradiție, care să îți răsfețe papilele gustative și să te aducă mai aproape de bucuriile culinare ale României.</p>
+                </section>
+                <section id="Cina">
+                        <h3><a id="Cina">Cină</a></h3>
+                        <figure>
+                            <img  width="100%" min-width = "80" max-width = "400" src="./resurse/imagini/cartofi.jpg" alt="cartofi">
+                                 
+                        <figcaption>O cină cu adevarat delicioasă!</figcaption>
+                        </figure>
+                        <p>Încheie ziua cu o cină delicioasă și sănătoasă. Alege dintre rețetele noastre tradiționale pentru o masă reconfortantă, cum ar fi <b>salată</b> cu <b>vinete</b> și <b>ciuperci</b>, servită cu <b>smântână</b> și <b>pogăcele</b> pufoase. <b>Jumările</b> și <b>cartofii</b> <b>țărănești</b>, acompaniate de <b>usturoi</b> și <b>mujdei</b>, vor adăuga un plus de savoare mesei tale de seară. Fie că optezi pentru <b>rețete ușoare</b> sau rețete cu <b>brânză</b>, fiecare fel de mâncare este gătit pentru a fi atât <b>sănătos</b>, cât și plin de gust. O <b>preparat de seară</b> perfect pentru a încheia ziua în stil tradițional și gustos!</p>
+                </section>
+                <section id="Desert">   
+                        <h3><a id="Desert">Desert</a></h3>
+                        <figure>
+                            <img width="100%" min-width = "80" max-width = "400" src="./resurse/imagini/placinta.jpg" alt="placinta">
+                            <figcaption>Mereu este loc și de ceva dulce!</figcaption>
+                        </figure>
+                        <p>Încheie-ți masa cu un desert dulce și savuros. Alege dintre dulciurile tradiționale românești, precum <b>cozonac</b> cu <b>nucă</b> și <b>cacao</b>, <b>plăcintă</b> cu <b>mere</b>, <b>papanași</b> cu <b>smântână</b> și <b>dulceață</b> sau <b>gogoși</b> <b>moldovenești</b>. Fiecare desert este pregătit cu grijă și cu ingrediente autentice, perfect pentru a încheia o masă tradițională. Cu <b>prăjituri</b> sau alte delicii de <b>coacere</b>, vei descoperi gusturi de neuitat care aduc aminte de mesele de acasă. Un <b>desert tradițional</b> este întotdeauna alegerea perfectă pentru o seară dulce!</p>
+                </section>
+                <section id="Sfaturi">
+                    <h2>Aveti un stil de viata sanatos?</h2>
+                    <p>Pentru mai multe sfaturi rasfoiti aceasta carte</p>
+                    <embed src="https://colegiulralucaripan.ro/wp-content/uploads/2019/03/carte-romania.pdf" type="application/pdf" width="100%" height="450">
+                </section> 
+                <section id="Promotie">
+                    <h2>Promotie</h2>
+                    <p>Pentru cei care platesc integral cursul, li se ofera o reducere de 30%.</p>
+                    <p>Calculul reducerii:</p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mrow>
+                          <mi mathvariant="bold" style="color:blue;">Pret final</mi>
+                          <mo>=</mo>
+                          <mi mathvariant="italic" style="color:green;">Pret initial</mi>
+                          <mo style="color:red;">&#x2212;</mo> 
+                          <mo stretchy="false">(</mo>
+                          <mn style="color:purple;">30</mn>
+                          <mo style="color:purple;">%</mo>
+                          <mo style="color:black;">&#xD7;</mo>
+                          <mi mathvariant="italic" style="color:green;">Pret initial</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                      </math>                      
+                  </section> 
+            </div>           
+        </main>
+        <footer>
+            <a href="https://raftulbunicii.ro/retete-romanesti/" target="blank">Viziteaza si acest site daca nu ai gasit aici retetele pe care le cautai!</a><br>
+            <a href="#" title = "Mergi sus!" id = "link-top">
+                <span class="paranteza">&#40;</span>
+                <span id="triunghi"></span>
+                <span class="paranteza">&#41;</span></a><br>
+            <div class="container-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-ZS3rxpogA?si=ru4PXZfGKA0GpnZL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen name="ifr"></iframe>
+                    <div class="taburi-iframe">
+                        <a href="https://www.e-retete.ro/romaneasca" target="ifr">Alte idei de retete traditionale!</a>
+                        <a href=" https://www.lauraadamache.ro/retete/traditionale-romanesti" target="ifr">Mult mai multe idei de retete!</a>
+                    </div>
+            </div>
+            <a href="./resurse/imagini/favicon/favicon.svg" download="ceva.svg">Download</a><br>
+            <section id="Curs"> 
+                <h2>CURS CULINAR</h2>
+                <a href="mailto:retetetraditionaleromanesti@gmail.com">Puteti trimite un mesaj la aceasta adresa de mail<i class="fa-solid fa-envelope fa-bounce"></i></a><br>
+                <a href="tel:+40764582499">Pentru inscrieri la cursul nostru sunati la +40764582499</a><br>
+                <a href="https://wa.me/40764582499" target="blank">Scrie-ne pe WhatsApp!</a><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.599758126061!2d26.097011776083985!3d44.43553547107578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e1!3m2!1sro!2sro!4v1741077765821!5m2!1sro!2sro" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+                <a href="https://www.google.com/maps/place/Facultatea+de+Matematic%C4%83+%C8%99i+Informatic%C4%83/@44.4355355,26.0970118,629m" target="blank">Indicații către locația noastră</a><br>
+            </section>
+            <p>Această pagină a fost creată pe 4 martie 2025<time datetime="2025-03-04T12:27:34+03:00"></time></p>
+            <p><small>Copyright &copy;2025 Andreea Busuioc</small></p>   
+            <p id="banner">Acesta este un proiect școlar!</p>     
+        </footer>
+    </body>
+</html>

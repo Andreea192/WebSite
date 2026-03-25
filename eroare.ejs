@@ -1,0 +1,96 @@
+<header>
+    <h1>Rețete tradiționale românești</h1>
+    <button id="toggle-theme" aria-label="Schimbă tema">
+        🌙
+        </button>
+</header>
+
+<nav>
+    <input id = "ch-menu" type = "checkbox"/>
+    <label id = "hamburger" for ="ch-menu">
+        <!--<img src = "resurse/imagini/Hamburger_icon_alb.png" alt = "menu"/>-->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+</label>
+    <ul class="meniu">
+        <li>
+            <a href="#acasa" class="text-icon">
+                <i class="fa-solid fa-house"></i>
+                <span class="text">Acasă</span>
+            </a>
+        <ul>
+            <li><a href="#Introducere"><span>Bine ați venit</span></a></li>
+            
+        </ul>
+        </li>
+        <li>
+            <a href="#Mic" class="text-icon">Mic dejun</a>
+            <ul>
+                <li><a href="Mamaliga.html"  data-short="Mamaliga"><span>Mămăligă cu brânză</span></a></li>
+                <li><a href="Omleta.html"  data-short="Omleta"><span>Omletă țărănească</span></a></a></li>
+                <li><a href="Branza.html" data-short="Placinta"><span>Plăcintă cu brânză</span></a></li>
+                <li><a href="Clatite.html" data-short="Clatite"><span>Clătite cu brânză și smântână</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#Prz" class="text-icon">Prânz</a>
+            <ul>
+                <li><a href="Ciorba.html" data-short="Ciorba"><span>Ciorbă de burtă</span></a></li>
+                <li><a href="Sarmale.html" data-short="Sarmale"><span>Sarmale în foi de varză</span></a></li>
+                <li><a href="Tochitura.html" data-short="Tochitura"><span>Tochitură moldovenească</span></a></li>
+                <li><a href="Iahnie.html" data-short="Iahnie de fasole"><span>Iahnie de fasole cu ciolan</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#cna" class="text-icon">Cină</a>
+            <ul>
+                <li><a href="Vinete.html" data-short="Salata de vinete"><span>Salată de vinete</span></a></li>
+                <li><a href="Ciuperci.html" data-short="Ciuperci"><span>Ciuperci cu smântână</span></a></li>
+                <li><a href="Pogăcele.html" data-short="Pogacele"><span>Pogăcele cu jumări</span></a></li>
+                <li><a href="Cartofi.html" data-short="Cartofi taranesti"><span>Cartofi țărănești cu mujdei</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#Dsrt" class="text-icon">Desert</a>
+            <ul>
+                <li><a href="Cozonac.html" data-short="Cozonac cu nuca"><span>Cozonac cu nucă </span></a></li>
+                <li><a href="Plăcintă.html" data-short="Placinta de mere">Plăcintă cu mere</a></li>
+                <li><a href="Papanași.html" data-short="Papanași"><span>Papanași cu dulceață</span></a></li>
+                <li><a href="Gogoși.html" data-short="Gogoși"><span>Gogoși moldovenești</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#Sft" class="text-icon">Informații suplimentare</a>
+            <ul>
+                <li>
+                    <a href="=/index#Curs"><span>Curs</span></a>
+                </li>
+                <li>
+                    <a href="/despre"><span>Despre</span></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // curățăm clasele existente și adăugăm cea salvată sau light
+      document.body.classList.remove('light-mode', 'dark-mode');
+      document.body.classList.add(localStorage.getItem('tema') || 'light-mode');
+
+      const btn = document.getElementById('toggle-theme');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          console.log('Toggle click');
+          if (document.body.classList.contains('light-mode')) {
+            document.body.classList.replace('light-mode', 'dark-mode');
+            localStorage.setItem('tema', 'dark-mode');
+          } else {
+            document.body.classList.replace('dark-mode', 'light-mode');
+            localStorage.setItem('tema', 'light-mode');
+          }
+        });
+      }
+    });
+  </script>
