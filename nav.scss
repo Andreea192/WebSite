@@ -1,0 +1,60 @@
+$culoare-fundal: #fff8f5;
+$culoare-accent: #c0392b;
+$culoare-text: #333;
+$culoare-border: #e74c3c;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  background-color: $culoare-fundal;
+  font-family: $font-family;
+  color: $culoare-text;
+  margin: 0;
+  padding: 0;
+}
+
+#err-coloane {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    section {
+      padding: 0 1rem;
+    }
+  }
+}
+
+#err-imag {
+  max-width: 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    border: 3px solid $culoare-border;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+section {
+  max-width: 600px;
+
+  h2 {
+    font-size: 2rem;
+    color: $culoare-accent;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
